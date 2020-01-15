@@ -586,7 +586,7 @@ font-weight: bold;
   font-size: 2.5em;
 }
 
-button#button.test-button{
+button#form-button2.test-button{
     font-size: 20px;
   }
 #card1 {
@@ -618,7 +618,7 @@ button#button.test-button{
 }
 
 @media only screen and (max-width: 677px) {
-  button#button.test-button{
+  button#form-button2.test-button{
     font-size: 20px;
   }
 }
@@ -627,16 +627,16 @@ button#button.test-button{
   nav a.sidenav-trigger {
     display: none;
   }
-  button#button.nav-test-button{
+  button#form-button.nav-test-button{
     display: none;
   }
 }
 
 @media only screen and (max-width: 601px) {
-  button#button.test-button{
+  button#form-button2.test-button{
     display: none;
   }
-  button#button.nav-test-button{
+  button#form-button.nav-test-button{
     margin: 15px;
     float: right;
   padding:0.3em 1.2em;
