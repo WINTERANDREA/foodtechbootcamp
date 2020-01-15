@@ -67,7 +67,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href=""><img src="image/logo2.png" class="brand-logo" ></a>
      <!--   <a href="" class="brand-logo">FoodTech Bootcamp
       </a> -->
-      <button id="button" class="nav-test-button" >ENROLL</button>
+      <button id="form-button" class="nav-test-button" onclick="showFormContainer()" >ENROLL</button>
 
 
       <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i class="material-icons">menu</i></a>
@@ -75,7 +75,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="#bootcamp-program">FOODTECH BOOTCAMP</a></li>
            <li><a href="#academy_section">ACADEMY</a></li>
           <li><a href="#food_section">STUDY TRIPS</a></li>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
          <!--  <li><a href="#career">BLOG</a></li> -->
           <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -91,7 +90,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <li><a style="color:#4db6ac" href="#bootcamp-program">FOODTECH BOOTCAMP</a></li>
      <li><a class="sidenav-text" href="#academy_section">ACADEMY</a></li>
       <li><a class="sidenav-text" href="#food_section">STUDY TRIPS</a></li>
-      <li><a class="dropdown-trigger2" href="#!" data-target="dropdown-mobile1" data-alignment="left">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
       <!-- <li><a class="sidenav-text" href="#career">BLOG</a></li> -->
       <li><a class="sidenav-text" href="#contact">CONTACT</a></li>
   </ul>
@@ -127,10 +125,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <button style="font-size: 20px" id="button" class="test-button" >ENROLL</button>
-
+   
 <!-- Form button -->
-<!-- <button id="button" class="test-button" onclick="showFormContainer()">JUMP IN THE FOODTECH INDUSTRY</button>
+<button id="form-button2" class="test-button test-js" onclick="showFormContainer2()">ENROLL</button>
 
     <div id="formContainer" style="display: none; margin-top: 60px;" class="container">
         <form id="form" class="row" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
@@ -141,12 +138,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <input id="emailField" class="btn2" type="email" name="entry.543364557" placeholder="Enter your email" required>
           </div>
           <div class="col s12 m6 offset-m3 l6 offset-l3">
-           <button id="send" class="btn3 col s12 m12" type="submit">APPLY</button>
+           <button style="border: 1px solid" id="send" class="btn3 col s12 m12" type="submit">APPLY</button>
           </div>
       </form>
 
       <h5 id="success-msg" style="text-align: center; display: none">Thanks <span id="namehere"></span>!<br>We will get in touch soon.</h5>
-    </div> -->
+    </div>
 
 
     </div>
@@ -529,7 +526,12 @@ window.onscroll = function() {
     //Open form container
     function showFormContainer(){
     document.getElementById("formContainer").style.display = "block";
-    document.getElementById("button").style.display = "none";
+    document.getElementById("form-button").style.display = "none";
+  }
+
+  function showFormContainer2(){
+    document.getElementById("formContainer").style.display = "block";
+    document.getElementById("form-button2").style.display = "none";
   }
 
     //Post html form to google form and googlesheet
@@ -583,7 +585,7 @@ window.onload = function() {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 15, 2020 09:00:00").getTime();
+var countDownDate = new Date("Mar 1, 2020 09:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
